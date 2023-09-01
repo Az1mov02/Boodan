@@ -1,0 +1,105 @@
+.reviews
+
+.reviews__container
+
+.reviews-header
+  padding: 20px 0 25px
+  +sm
+    padding: 20px 0 30px
+  +md
+    padding: 30px 0 40px
+  +bg
+    padding: 30px 0 50px
+
+.reviews-title
+  text-align: center
+
+.reviews__body
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -20px -30px
+  padding-bottom: 10px
+  justify-content: center
+  +sm
+    padding-bottom: 30px
+  +md
+    padding-bottom: 40px
+
+.reviews-column
+  flex: 0 1 25%
+  margin: 0 0 30px 0
+  padding: 0 20px
+  +big
+    flex: 0 1 50%
+  +small
+    flex: 0 1 100%
+
+.review-column
+  flex: 0 1 33.3333%
+  margin: 0 0 30px 0
+  padding: 0 20px
+  +medium
+    flex: 0 1 50%
+  +small
+    flex: 0 1 100%
+
+.reviews-item
+
+.item-reviews
+
+.reviews-item__video
+  position: relative
+  padding: 0 0 75.5% 0
+  z-index: 0
+  +medium
+    padding: 0 0 56.25% 0
+
+.reviews-item__video iframe
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.reviews-item__content
+  flex: 1 1 auto
+  padding: 16px 5px 16px 0
+  display: flex
+  flex-direction: column
+  gap: 7px
+  +md
+    gap: 4px
+
+
+.reviews-item__stars
+  display: flex
+
+.reviews-item__title
+  font-size: 14px
+  font-weight: 700
+  line-height: 121.4%
+
+.review-item__title
+  font-size: 16px
+  font-weight: 700
+  line-height: 121.8%
+
+.reviews-item__text
+  color: #8B8B8B
+  font-weight: 500
+  line-height: 140%
+
+.reviews-btn
+  display: block
+  text-align: center
+  background: #F4F4F4
+  padding: 13px 0
+  font-size: 13px
+  font-weight: 500
+  color: #2C2C2C
+  line-height: 123%
+  border-radius: 4px
+  transition: all 500ms
+  &:hover
+    background-color: #d9d9d9

@@ -1,0 +1,28 @@
+.form-section .right-block input[type="checkbox"] {
+  display: none;
+}
+
+.form-section .right-block input[type='checkbox'] + label span {
+  background: $colorRed;
+  display: inline-flex;
+  border: 1px solid #cccccc;
+  padding-top: 5.6px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.form-section .right-block input[type="checkbox"]:checked + label span:before {
+  content: url('../img/checkbox.svg');
+}
+
+.form-section .right-block .form-row:last-of-type label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+

@@ -1,0 +1,65 @@
+.main-line
+  border-bottom: 1px solid #E2E2E2
+.main-top
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  padding: 27px 0
+  gap: 30px
+  +big
+    margin-top: 94px
+  +small
+    gap: 15px
+    justify-content: center
+  @media screen and (max-width: 600px)
+    justify-content: center
+
+.main-top__info
+  max-width: 235px
+  line-height: 121%
+  +small
+    text-align: center
+  @media screen and (max-width: 600px)
+    text-align: center
+
+.main-top__contact
+  text-align: right
+  display: flex
+  flex-direction: column
+  gap: 0
+  +small
+    text-align: center
+  @media screen and (max-width: 600px)
+    text-align: center
+
+  span
+    color: #CD0000
+    font-size: 22px
+    font-weight: 700
+    line-height: 122%
+    margin-bottom: 6px
+  p
+    line-height: 121%
+
+
+//=======  main-image  ==========================================
+.main-image
+  background: url('../img/main.jpg') 0 0 no-repeat
+  background-size: cover
+  background-position: center
+  padding: 62px 0 152px 0
+  min-height: 350px
+
+.main-title
+  text-align: center
+  color: #fff
+  font-size: 22px
+  line-height: 121%
+  +sm
+    font-size: 28px
+  +md
+    font-size: 34px
+  +bg
+    font-size: 42px
+

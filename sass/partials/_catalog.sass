@@ -1,0 +1,295 @@
+.page-selects
+  display: flex
+  flex-direction: column
+  gap: 24px
+  +small
+    order: 2
+
+.search-selects__bottom
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  +small
+    order: 0
+
+//====================================
+
+.catalog
+  background: #F7F7F9
+  box-shadow: -1px 0px 0px #E5E5EF
+  padding: 23px 0 38px
+  border-left: 1px solid #e1e1e1
+
+//.catalog__container .container
+//  max-width: 750px
+
+.catalog-header
+
+.catalog-page
+  display: flex
+  gap: 8px
+  font-size: 12px
+  color: #8B8B8B
+  line-height: 125%
+
+.catalog-link
+  color: #8B8B8B
+  padding-right: 8px
+  position: relative
+  &:after
+    position: absolute
+    content: ""
+    width: 5px
+    height: 5px
+    right: -6px
+    top: 50%
+    background: #c4c4c4
+    border-radius: 50%
+    transform: translateY(-50%)
+
+.catalog-text
+  padding-left: 8px
+
+.catalog-title
+  padding: 21px 0 24px
+  font-weight: 700
+  font-size: 32px
+  line-height: 121.875%
+  font-family: 'Montserrat', sans-serif
+
+.form-filter
+  padding: 24px
+  background: #FFFFFF
+  box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24)
+  border-radius: 6px
+  display: flex
+  flex-direction: column
+  gap: 24px
+
+.form-filter__main .container
+  margin-top: -106px
+  //background: #FFFFFF
+  //box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24)
+  //border-radius: 6px
+  //display: flex
+  //flex-direction: column
+  //padding: 24px
+  //gap: 24px
+
+.search-checks
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  gap: 23px
+
+.search-check
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 8px
+  input
+    display: none
+  span
+    background: $colorRed
+    display: inline-flex
+    border:  none
+    border-radius: 4px
+    justify-content: center
+    align-items: center
+    width: 18px
+    height: 18px
+  &:not(:last-child)
+    margin-right: 32px
+
+.search-check input[type="checkbox"]:checked + span:before
+  content: url('../../img/checkbox.svg')
+
+.search-selects
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0  -6px -14px -6px
+  +small
+    margin: 0  -8px 0 -8px
+    gap: 24px
+    order: 1
+  +big
+    justify-content: flex-start
+  +bigg
+    justify-content: flex-start
+
+.search__select
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  gap: 9px
+  padding: 0 6px 18px
+  +small
+    padding: 0 8px
+  position: relative
+  select
+    appearance: none
+    border-radius: 2px
+    padding: 8px 12px 8px 16px
+    background: #F1F1F1 url('../img/arrow/arrow.svg') calc(100% - 10px) center no-repeat
+    font-size: 13px
+    +medium
+      padding: 12px 12px 12px 16px
+
+.search__select:first-child
+  flex: 0 1 247px
+  +bigg
+    flex: 0 1 270px
+  +medium
+    flex: 0 1 50%
+  +small
+    flex: 0 1 100%
+
+.search__select:nth-child(2)
+  flex: 0 1 196px
+  +bigg
+    flex: 0 1 220px
+  +medium
+    flex: 0 1 50%
+  +small
+    flex: 0 1 100%
+
+.search__select:nth-child(3)
+  flex: 0 1 199px
+  +bigg
+    flex: 0 1 225px
+  +medium
+    flex: 0 1 33.3333%
+  +small
+    flex: 0 1 100%
+
+.search__select:nth-child(4)
+  flex: 0 1 215px
+  +medium
+    flex: 1 1 33.3333%
+  +small
+    flex: 0 1 100%
+
+//.search__select__btn
+//  flex: 0 1 80px
+//  +medium
+//    flex: 0 1 33.3333%
+//  +small
+//    flex: 0 1 100%
+
+.search__select:last-child
+  flex: 0 1 82px
+  +medium
+    flex: 0 1 33.3333%
+  +small
+    flex: 0 1 100%
+
+.search-button
+  background: #CD0000
+  border-radius: 4px
+  font-weight: 500
+  font-size: 14px
+  line-height: 140%
+  color: #FFFFFF
+  padding: 0 16px
+  min-height: 33px
+  +medium
+    min-height: 40.09px
+  +small
+    font-size: 18px
+    min-height: 54px
+
+.select-title
+  font-weight: 400
+  font-size: 13px
+  line-height: 123%
+
+.search-select
+
+.seacrch__inputs
+  display: flex
+  flex-direction: row
+  gap: 8px
+  +small
+    flex-direction: column
+    gap: 10px
+  input[type="text"]
+    width: 100%
+    background: #F1F1F1
+    border-radius: 2px
+    padding: 8px
+    +medium
+      padding: 12px
+
+  input[placeholder]
+    color: #000
+
+.search-input
+
+.search-selects__bottom
+  margin: 0 -8px
+  +small
+    flex-wrap: wrap
+    margin: 0 -8px 8px
+    gap: 24px
+  .search__select:first-child
+    flex: 0 1 20%
+    +medium
+      flex: 0 1 50%
+    +small
+      flex: 0 1 100%
+
+  .search__select:nth-child(2)
+    flex: 0 1 28%
+    +medium
+      flex: 0 1 50%
+    +small
+      flex: 0 1 100%
+
+.search__bottom
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  gap: 24px
+  +small
+    order: 0
+
+.stock-info
+  display: flex
+  gap: 6px
+  font-weight: 500
+  font-size: 13px
+  line-height: 123%
+  color: #808080
+
+.stock-automobiles
+  color: $colorRed
+
+.advanced-btn
+  display: flex
+  justify-content: center
+  align-items: center
+  font-weight: 500
+  font-size: 13px
+  color: #CD0000
+  cursor: pointer
+  border-radius: 4px
+  border: 1px solid #CACACA
+  padding: 0 40px 0 16px
+  min-height: 32px
+  background: #FFFFFF url('../img/arrow.svg') calc(100% - 20px) 50%  no-repeat
+  text-align: center
+  order: 1
+  +small
+    background: #FFFFFF url('../img/arrow.svg') calc(100% - 24%) 50%  no-repeat
+    flex: 0 1 100%
+    min-height: 50px
+    padding: 0 70px 0 46px
+    order: 3
+
+
+
+
+
+

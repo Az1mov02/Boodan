@@ -1,0 +1,200 @@
+.feedback
+  position: relative
+
+.feedback-header
+  top: -30%
+  position: absolute
+  display: flex
+  flex-direction: column
+  z-index: 4
+  padding: 24px
+  background: #fff
+  width: 92%
+  box-shadow: 0px 9px 34px rgba(58, 68, 83, 0.24)
+  +sm
+    top: 10%
+    width: 387px
+
+.feedback-title
+  padding-bottom: 24px
+
+.feedback-registr
+  display: flex
+  flex-direction: column
+  gap: 16px
+
+.contact
+  display: flex
+  flex-direction: column
+  gap: 9px
+
+.contact label
+  font-size: 13px
+  line-height: 123%
+  font-weight: 400
+
+input[name="name"]
+  display: block
+input[name="number"]
+  display: block
+
+.contact input
+  min-height: 40px
+  background: #F1F1F1
+  border-radius: 2px
+  padding: 0 0 0 16px
+
+.submit-btn
+  margin: 8px 0 0 0
+  background: #CD0000
+  border-radius: 4px
+  min-height: 44px
+  padding: 12px 0
+  color: #fff
+  transition: all 300ms
+  &:hover
+    background: #CD0000
+
+//==================================
+.map
+  width: 100%
+  height: 528px
+  position: relative
+  z-index: 3
+
+.map iframe
+  position: absolute
+  left: 0
+  right: 0
+  top: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  overflow-y: scroll
+
+
+//============================
+.connection
+  padding: 37px 0
+  +small
+    padding: 37px 0 168px
+
+.connection-header
+  padding: 10px 0
+
+.connection-title:not(:last-child)
+  padding: 0 0 15px 0
+
+.connection-address
+  padding: 0 0 5px 0
+  font-weight: 500
+  font-size: 18px
+  line-height: 170%
+
+.connection__body
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+  gap: 20px
+  flex-direction: column
+  padding: 0
+  margin-bottom: 18px
+  +md
+    padding: 0 100px 0 0
+    flex-direction: row
+
+.connection__wrapper
+  display: flex
+  flex-direction: column
+  gap: 4px
+
+.connection-item
+  display: flex
+  align-items: center
+  flex-direction: row
+  flex-wrap: wrap
+  line-height: 190%
+  font-weight: 500
+  position: relative
+  padding-left: 28px
+  &:before
+    content: ""
+    position: absolute
+    background-image: url('../img/connection/tell.svg')
+    background-size: cover
+    top: 12%
+    left: 0
+    width: 22px
+    height: 22px
+  +medium
+    flex-direction: column
+    align-items: normal
+
+.connection-number
+  color: $colorRed
+  margin-right: 2px
+  min-width: 120px
+  font-size: 14px
+  +small
+    font-size: 18px
+
+.connection-text
+  color: #8B8B8B
+.connection__whatsapp
+  display: flex
+  flex-direction: column
+  gap: 4px
+  padding: 0
+  +md
+    padding: 0 15px
+
+.whatsapp-number
+  display: block
+  color: #8B8B8B
+  line-height: 190%
+  font-size: 14px
+  font-weight: 500
+  position: relative
+  min-width: 120px
+  padding: 0 0 0 28px
+  &:before
+    position: absolute
+    content: ""
+    top: 20%
+    left: 0
+    right: 20px
+    width: 18px
+    height: 18px
+    background-image: url('../img/connection/whatsapp.svg')
+    background-size: cover
+  +small
+    font-size: 18px
+.connection__email
+  position: relative
+
+.connection__email a
+  color: $colorRed
+  font-size: 14px
+  line-height: 170%
+  font-weight: 500
+  display: block
+  position: relative
+  padding: 0 0 0 34px
+  min-width: 100px
+  &:before
+    position: absolute
+    content: ""
+    top: 10%
+    left: 0
+    right: 20px
+    width: 22px
+    height: 22px
+    background-image: url('../img/connection/email.svg')
+    background-size: cover
+    +small
+      top: 18%
+  +small
+    font-size: 18px
+
+

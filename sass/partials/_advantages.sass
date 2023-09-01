@@ -1,0 +1,55 @@
+.advantages
+  padding: 70px 0 20px 0
+
+.advantages__header
+  padding: 0 0 30px 0
+
+.advantages-title
+  text-align: center
+
+.advantages__body
+  display: flex
+  flex-wrap: wrap
+  margin: 0 -15px -30px
+
+.advantages-column
+  flex: 0 1 25%
+  padding: 0 15px
+  +big
+    flex: 0 1 50%
+  +small
+    flex: 0 1 100%
+
+.advantages-item
+  margin: 0 0 25px 0
+  display: flex
+  flex-direction: column
+  +small
+    gap: 20px
+    flex-direction: row
+    align-items: flex-start
+    margin-bottom: 30px
+  +bg
+    margin-top: 15px
+
+.advantages-icon
+  width: 50px
+  height: 50px
+
+.advantages-icon:not(:last-child)
+  margin-bottom: 16px
+
+.advantages-value
+  font-weight: 700
+  line-height: 110%
+  font-size: 18px
+
+.advantages-value:not(:last-child)
+  margin: 0 0 8px 0
+
+.advantages-text
+  color: #8B8B8B
+  font-size: 14px
+  line-height: 125%
+  font-weight: 500
+

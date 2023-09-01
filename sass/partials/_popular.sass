@@ -1,0 +1,205 @@
+.popular
+  padding: 37px 0 71px
+  +medium
+    padding: 30px 0 30px
+  .container
+    margin-bottom: 53px
+
+.popular-header
+
+.popular-title
+
+.popular__checks
+  padding: 16px 0 23px
+
+.form-mini
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  gap: 15px
+
+.popular-check
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 8px
+  cursor: pointer
+  transition: all 500ms
+  input
+    display: none
+  &:not(:last-child)
+    margin-right: 24px
+  span
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #D3D3D3
+    width: 18px
+    height: 18px
+    background: #fff
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.1)
+    border-radius: 50%
+
+.popular-check input[type="radio"]:checked + span:before
+  content: url('../../img/popular/radio.svg')
+
+.popular-check__title
+  font-weight: 500
+  font-size: 14px
+  line-height: 120%
+  color: #000000
+
+//  =====  popular items  ======================================
+.popular__items
+  display: flex
+  flex-direction: column
+  gap: 8px
+  flex-wrap: wrap
+  +medium
+    flex-direction: row
+
+.popular-item
+  display: flex
+  align-items: center
+  padding: 16px 32px 16px 16px
+  background: #FFFFFF
+  border: 1px solid #E2E2E2
+  border-radius: 4px
+  justify-content: space-between
+  transition: all 400ms
+  position: relative
+  flex-direction: row
+  +medium
+    flex: 1 1 45%
+    flex-direction: column
+    padding: 16px
+    gap: 8px
+
+.popular-item:hover
+  box-shadow: 0px 10px 23px 4px rgba(34, 60, 80, 0.23)
+
+.popular-img
+  width: 226px
+  height: 148px
+  border-radius: 2px
+  +medium
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+@media screen and (max-width: 768.98px)
+ .popular-item
+    img
+      width: 100%
+      height: auto
+      object-fit: cover
+
+.popular-info
+  width: 690px
+  +bigg
+    width: 455px
+  +medium
+    width: 100%
+    padding: 9px
+
+.popular-item__title
+  font-weight: 700
+  font-size: 22px
+  line-height: 121.42%
+  color: #000000
+  transition: all 300ms
+  display: block
+
+.popular-item__title:before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+
+.popular-item:hover .popular-item__title
+  color: $colorRed
+
+.popular-info__inner
+  display: flex
+  justify-content: space-between
+  margin-top: 8px
+  flex: 0 1 100%
+  flex-wrap: wrap
+  +medium
+    flex-direction: column
+    flex: 0 1 100%
+    justify-content: flex-start
+
+.popular-options__left
+  display: flex
+  flex-direction: column
+  gap: 8px
+
+.popular-option
+  color: #8B8B8B
+  font-weight: 500
+  font-size: 16px
+  line-height: 125%
+  gap: 12px
+  display: flex
+  span
+    color: #000000
+  +md
+    font-size: 14px
+    line-height: 122.42%
+    gap: 6px
+
+.popular-options__center
+  display: flex
+  flex-direction: column
+  gap: 8px
+  +medium
+    padding-bottom: 16px
+    border-bottom: 1px solid #E7E7E7
+    margin-bottom: 16px
+
+.popular-options__right
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  gap: 8px
+  +medium
+    align-items: flex-start
+
+.popular-option__subtitle
+  font-weight: 500
+  font-size: 14px
+  color: #8B8B8B
+
+.popular-option__price
+  font-weight: 700
+  font-size: 20px
+  line-height: 24px
+  color: #000000
+
+.popular-option__available
+  border-radius: 35px
+  text-align: center
+  color: #ffffff
+  font-size: 13px
+  font-weight:  500
+  line-height: 123%
+  display: flex
+  justify-content: center
+  padding: 4.5px 10px
+  +medium
+    padding: 8px 16px
+
+.in-stock
+  background: #73DB43
+
+.not-stock
+  background: #EBB428
+
+
+
+
+
+
